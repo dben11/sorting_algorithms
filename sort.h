@@ -5,6 +5,9 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+
+#define INCRE 1
+#define DECRE -1
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -29,5 +32,8 @@ void swap(int *a, int *b);
 int lomuto_partition(int *array, size_t size, int left, int right);
 void lomuto_sort(int *array, size_t size, int left, int right);
 void shell_sort(int *array, size_t size);
+listint_t *dlistint_len(listint_t *h);
+void swap_nodes(listint_t **list, listint_t *node);
+void cocktail_sort_list(listint_t **list);
 
 #endif /* SORT_H */
